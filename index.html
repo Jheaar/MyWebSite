@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnold Ochoa</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <button id="scrollToTopBtn" title="Go to top">
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </button>
+    <section id="intro">
+        <nav class="navigation" role="navigation">
+            <div class="container">
+                <ul>
+                    <li>
+                       <a class="About" href="#about">ABOUT</a> 
+                    </li>
+                    <li>
+                        <a class="Passion" href="#passion">PASSION</a>
+                    </li>
+                    <li>
+                        <a class="Technologies" href="#technologies">TECHNOLOGIES</a>
+                    </li>
+                    <li>
+                        <a class="Contact" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="intro2">
+            <div class="intro-me">
+                <h1>Hi, I'm Arnold</h1>
+                <p>Enginner System, Web Developer & UX/UI</p>
+        </div>
+        </section>
+    </section>
+    <section id="about">
+        <div class="Aboutme">
+            <h2>About me</h2>
+            <img src="image/Yo.jpg">
+            <p>Hello! I am Arnold Jherico Ochoa Quispe, originally from Lima, Peru. Currently, I am in my third year of the Systems Engineering degree at the <a href="https://unmsm.edu.pe/" target="_blank">Universidad Nacional Mayor de San Marcos</a>. My current focus is in the field of UX/UI, where I am working to transform web pages into pleasant and effective experiences for users. I am excited to learn and contribute to the development of intuitive and engaging interfaces that improve online interaction.</p>
+        </div>
+    </section>
+    <section id="passion">
+        <div class="WhatIDo">
+            <h2>What I Do</h2>
+            <div class="skill">
+                <image src="image/Diseno.png"></image>
+                <h3>Design</h3>
+                <p>
+                    In my design work, I specialize in creating compelling and visually pleasing experiences. My approach involves a deep understanding of user needs to develop intuitive and aesthetically pleasing interfaces. I strive to find the perfect balance between functionality and visual appeal.
+                </p>
+            </div>
+            <div class="skill">
+                <image src="image/development.png"></image>
+                <h3>Development</h3>
+                <p>
+                    In the field of development, I focus on building efficient and scalable technological solutions. Leveraging my programming skills, I craft web applications that meet client requirements. My approach is rooted in adopting best development practices and staying updated with the latest technological trends.
+                </p>
+            </div>
+            <div class="skill">
+                <image src="image/development.png"></image>
+                <h3>Solve Problems</h3>
+                <p>
+                    My go-to line is "I don't know, but I'll find the solution." I greatly enjoy the process I go through to identify problems and offer effective solutions.
+                </p>
+            </div>
+        </div>
+    </section>    
+    <section id="technologies">
+        <div class="MyTechnologies">
+            <h2>Technologies</h2>
+            <div class="icons">
+                <img class="img" src="icons/html.png" id="html">
+            </div>
+            <div class="icons">
+                <img class="img" src="icons/css.png" id="css">
+            </div>
+            <div class="icons">
+                <img class="img" src="icons/js.png" id="js">
+            </div>
+            <div class="icons">
+                <img class="img" src="icons/git.png" id="git">
+            </div>
+            <div class="icons">
+                <img class="img" src="icons/java.png" id="java">
+            </div>
+            <div class="icons">
+                <img class="img" src="icons/python.png" id="python">
+            </div>
+            <div class="icons">
+                <img class="img" src="icons/angular.png" id="angular">
+            </div>
+            <div class="icons">
+                <img class="img" src="icons/sql.png" id="sql">
+            </div>
+            <div class="icons">
+                <img class="img" src="icons/linux.png" id="linux">
+            </div>
+        </div>
+    </section>
+    <section id="mail">
+        <div class="mail-icon">
+            <ion-icon name="mail-outline"></ion-icon>
+            <h2>Contact me!</h2>
+        </div>
+        <p>If you have an idea for a project, contact me to make it happen!</p>
+        <div class="copy-mail-container">
+            <div class="email-text-container">
+                <p class="email-text">arnoldochoa2001@gmail.com</p>
+            </div>
+            <div class="copy-mail-button-container">
+                <a id="copy-mail"  onclick="copyEmailToClipboard()">Copy</a>
+                <span id="copied-icon" style="display: none;">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                </span>
+            </div>
+        </div>
+        <p>
+            <a id="mail-button" href="mailto:arnoldochoa2001@gmail.com" target="_blank">Send Mail</a>
+        </p>
+    </section>    
+    <section id="contact">
+        <div class="redes">
+            <ul>
+                <li>
+                    <a id="github" href="https://github.com/Jheaar" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a id="linkedin" href="https://www.linkedin.com/in/arnold-jherico-ochoa-quispe-003b93284/" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a id="instagram" href="https://www.instagram.com/jhearzzz/" target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a id="whatsapp" href="https://wa.me/998505497" target="_blank">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </div>                         
+    </section>    
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</html>
