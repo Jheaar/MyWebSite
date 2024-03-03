@@ -17,14 +17,13 @@ function copyEmailToClipboard() {
 
 document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', function() {
-        var aboutSection = document.getElementById('about');
-        var aboutSectionPosition = aboutSection.offsetTop - 50;
         var currentScrollPosition = window.pageYOffset;
         var navigation = document.querySelector('.navigation');
-        if (currentScrollPosition > aboutSectionPosition) {
-            navigation.classList.add('hidden');
+
+        if (currentScrollPosition > 0) {
+            navigation.classList.add('bg-dark');
         } else {
-            navigation.classList.remove('hidden');
+            navigation.classList.remove('bg-dark');
         }
     });
 });
@@ -56,3 +55,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+        const offsetTop = section.offsetTop;
+        const offsetHeight = section.offsetHeight;
+        const windowHeight = window.innerHeight;
+
+        // Calcula la posición de desplazamiento para centrar la sección en la pantalla
+        const scrollTo = offsetTop - (windowHeight - offsetHeight) / 2;
+
+        // Desplaza la página suavemente a la posición calculada
+        window.scrollTo({
+            top: scrollTo,
+            behavior: "smooth"
+        });
+    }
+}
